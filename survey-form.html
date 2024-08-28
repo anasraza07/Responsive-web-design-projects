@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles/survey-form.css">
+</head>
+
+<body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name
+                <input type="text" id="name" placeholder="Enter your name" required />
+            </label>
+            <label for="email" id="email-label">Email
+                <input type="email" id="email" placeholder="Enter your Email" required />
+            </label>
+            <label for="number" id="number-label">Age <span>(optional)</span>
+                <input type="number" id="number" min="13" max="120" placeholder="Age" required />
+            </label>
+            <label for="dropdown">What is your favourite food?
+                <select id="dropdown">
+                    <option value="">Select an option</option>
+                    <option value="1">Biryani</option>
+                    <option value="2">Nihari</option>
+                    <option value="3">Macroni</option>
+                </select>
+            </label>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label class="radio-checkbox" for="definitely">
+                <input type="radio" class="inline" name="recommendation" id="definitely" value="definitely" />
+                Definitely</label>
+            <label class="radio-checkbox" for="maybe">
+                <input type="radio" class="inline" name="recommendation" id="maybe" value="maybe" />
+                Maybe</label>
+            <label class="radio-checkbox" for="not-sure">
+                <input type="radio" class="inline" name="recommendation" id="not-sure" value="not-sure" />
+                Not sure</label>
+        </fieldset>
+
+        <fieldset>
+            <p>What would you like to see improved? 
+                <span>(Check all that apply)</span></p>
+            <label class="radio-checkbox">
+                <input type="checkbox" class="inline" id="frontend" value="Front-end Projects" /> Front-end Projects
+            </label>
+            <label class="radio-checkbox">
+                <input type="checkbox" class="inline" id="frontend" value="Back-end Projects" /> Back-end Projects
+            </label>
+            <label class="radio-checkbox">
+                <input type="checkbox" class="inline" id="frontend" value="Data Visualization" /> Data Visualization
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="comment">Any comments or suggestions?
+                <textarea id="comment" rows="5" cols="40" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+
+        <button type="submit" id="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
