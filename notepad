@@ -585,6 +585,6 @@ Round the top-left corner of .three by 30 pixels, the top-right by 25 pixels, th
 Rotate each rectangle to give them more of an imperfect, hand-painted look.
 Use the transform property on the .one selector to rotate it counter clockwise by 0.6 degrees.
 .two element clockwise by 0.4 degrees.
-.three element clockwise by 0.2 degrees.
+.three element counter clockwise by 0.2 degrees.
 
 
